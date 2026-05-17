@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "weekly-meeting-module-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/weeklyMeetingModule/WeeklyMeetingModuleWebPart.js",
+          "manifest": "./src/webparts/weeklyMeetingModule/WeeklyMeetingModuleWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "WeeklyMeetingModuleWebPartStrings": "lib/webparts/weeklyMeetingModule/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}

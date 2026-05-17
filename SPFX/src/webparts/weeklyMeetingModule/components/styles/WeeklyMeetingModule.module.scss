@@ -1,0 +1,85 @@
+@import "~@fluentui/react/dist/sass/References.scss";
+
+$Blue: #1674ae;
+$Blue_HOVER: #4976f0;
+$Blue_DARK: #1f52e0;
+$Blue_PALE: #f0f9ff;
+$Blue_GLOW: rgba(41, 74, 240, 0.15);
+$Blue_BORDER: rgba(41, 164, 240, 0.3);
+
+$TEXT_DARK: #1f2937;
+$TEXT_MED: #4b5563;
+$TEXT_MUTED: #9ca3af;
+$BORDER: #e5e7eb;
+$BG_SOFT: #f9fafb;
+$BG: #ffffff;
+
+:global {
+  #workbenchPageContent,
+  .CanvasComponent.LCS .CanvasZone {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 10%;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    overflow: visible !important;
+  }
+
+  .spAppAndPropertyPanelContainer .sp-appBar {
+    min-width: 47px !important;
+  }
+
+  .c_XTVxy_hHQBj {
+    padding: 0 !important;
+  }
+}
+
+.weeklyMeetingModule {
+  overflow: hidden;
+  position: relative !important;
+  padding: 1rem;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+  &.teams {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+  }
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 26.25rem;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link);
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered);
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+@media (max-width: 37.5rem) {
+  .createMeetingContainer {
+    padding: 1.5625rem 0.9375rem;
+  }
+}

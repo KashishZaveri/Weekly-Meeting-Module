@@ -1,0 +1,149 @@
+@import "~@fluentui/react/dist/sass/References.scss";
+
+$Blue: #1674ae;
+$Blue_DARK: #1f52e0;
+$Blue_PALE: #eff6ff;
+$Blue_BORDER: rgba(31, 82, 224, 0.25);
+$Blue_GLOW: rgba(22, 116, 174, 0.12);
+
+$TEXT_DARK: #1f2937;
+$TEXT_MED: #4b5563;
+$BORDER: #e5e7eb;
+$BG_SOFT: #f9fafb;
+$BG: #ffffff;
+
+$FONT: "Plus Jakarta Sans", sans-serif;
+
+.contentArea {
+  background: #f1f5f9 !important;
+  width: auto !important;
+  overflow-y: auto;
+  border-radius: 2px;
+  height: auto !important;
+
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+}
+
+.loaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.75rem 1.25rem;
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 55%, #0891b2 100%);
+  border-radius: 20px;
+  margin: 0 0.5rem;
+  box-shadow: 0 4px 16px rgba(31, 82, 224, 0.25);
+}
+.welcomeBanner {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  color: $BORDER;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.persona {
+  :global(.ms-Persona-primaryText) {
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: $FONT;
+  }
+  :global(.ms-Persona-details) {
+    justify-content: center;
+  }
+  :global(.ms-Persona-secondaryText) {
+    color: hsl(0deg 0% 100% / 63%) !important;
+    margin-top: -2px !important;
+  }
+}
+
+.headerBtn {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.4rem !important;
+  color: #ffffff !important;
+  background-color: transparent !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.6) !important;
+  border-radius: 8px !important;
+  padding: 0.45rem 1.1rem !important;
+  font-size: 0.85rem !important;
+  font-family: $FONT !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  letter-spacing: 0.3px !important;
+  white-space: nowrap;
+  transition: all 0.2s ease !important;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    border-color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18) !important;
+  }
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-bottom: 1px solid $BORDER;
+  border-radius: 20px !important;
+  margin: 0 0.5rem 0.5rem !important;
+  padding: 0.75rem 1rem;
+  backdrop-filter: blur(6px);
+}
+
+.dropdown {
+  width: 280px !important;
+
+  @media (max-width: 600px) {
+    width: 100% !important;
+  }
+}
+
+.paginationWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem 0;
+
+  padding-bottom: 1rem;
+
+  :global(.MuiPagination-ul) {
+    justify-content: center;
+  }
+}
+
+.archiveBtn {
+  border: 1.5px solid $Blue_DARK !important;
+  color: $Blue_DARK !important;
+  font-family: $FONT !important;
+  font-weight: 600 !important;
+  font-size: 0.92rem !important;
+  text-transform: none !important;
+  border-radius: 8px !important;
+  padding: 0.4rem 1rem !important;
+  white-space: nowrap !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 2px 6px rgba(164, 157, 157, 0.3) !important;
+
+  &:hover {
+    transform: translateY(-2px);
+    background-color: $Blue_PALE !important;
+    box-shadow: 0 5px 12px rgba(31, 82, 224, 0.15) !important;
+  }
+}

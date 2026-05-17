@@ -1,0 +1,784 @@
+@import "~@fluentui/react/dist/sass/References.scss";
+
+$Blue: #1674ae;
+$Blue_HOVER: #4976f0;
+$Blue_DARK: #1f52e0;
+$Blue_PALE: #eff6ff;
+$Blue_GLOW: rgba(22, 116, 174, 0.15);
+$Blue_BORDER: rgba(31, 82, 224, 0.3);
+$TEXT_DARK: #1f2937;
+$TEXT_MED: #4b5563;
+$TEXT_MUTED: #9ca3af;
+$BORDER: #e5e7eb;
+$BG_SOFT: #f8fafc;
+$BG: #ffffff;
+$FONT: "Plus Jakarta Sans", sans-serif;
+
+.contentArea {
+  background: #f1f5f9 !important;
+  width: 100%;
+  overflow-y: auto;
+  border-radius: 0.1rem;
+  transform: none !important;
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.75rem 1.25rem;
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 55%, #0891b2 100%);
+  border-radius: 20px;
+  margin: 0.4rem 0.4rem 0.6rem 0.4rem;
+  box-shadow: 0 4px 16px rgba(31, 82, 224, 0.25);
+}
+
+.inviteesAttendeesContainer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 15px !important;
+}
+
+.inviteesContainer {
+  padding: 0.5rem;
+  width: 50%;
+}
+
+.attendeesContainer {
+  padding: 0.5rem;
+  width: 50%;
+}
+
+.durationText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+.mins {
+  display: flex !important;
+  align-items: flex-end !important;
+}
+
+.headingWithCreateBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 254, 254, 0.9);
+  border-radius: 10px;
+  margin: 0 0.5rem;
+}
+
+.headingWeekChip {
+  font-weight: 700 !important;
+  background-color: $Blue_PALE !important;
+  color: $Blue_DARK !important;
+  border: 1px solid $Blue_BORDER !important;
+  border-radius: 0.8rem !important;
+  font-size: 0.9rem !important;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+.weekHeading {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+}
+
+.cardFirstPart {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.dateTimeBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.dateTimeTitle {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: grey;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.dateBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem !important;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid grey;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background: $Blue_PALE;
+  box-shadow: 0 2px 8px rgba(164, 157, 157, 0.3);
+  font-weight: bold;
+}
+
+.modernDateTimeChip {
+  display: inline-flex;
+  align-items: center;
+  background-color: #f0f7ff;
+  border: 1px solid #c7e0f4;
+  color: #004578;
+  padding: 4px 12px;
+  border-radius: 100px;
+  margin: 12px 0;
+  white-space: nowrap;
+  width: fit-content;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+
+  .dateTimeText {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+
+  &:hover {
+    background-color: #deecf9;
+    border-color: #71afe5;
+  }
+}
+
+.projectCard {
+  .cardHeader {
+    margin-bottom: 8px;
+  }
+}
+
+.dateBoxTitle {
+  font-size: 1rem;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+
+  font-weight: bold;
+  color: gray;
+  letter-spacing: 0.7px;
+}
+
+.editCancelMeetingBtns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem !important;
+  margin-top: 1rem;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+
+  svg {
+    font-size: 1rem !important;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+
+    color: $Blue_DARK;
+  }
+}
+
+.filterCreateBtns {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+/* PROFILE */
+.userProfileRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatarCircle {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #0078d4;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+.userName {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+.currentDate {
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+  color: #ddd;
+  padding-left: 4.5rem;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+.headerActions {
+  display: flex !important;
+  gap: 1rem !important;
+  flex-wrap: wrap !important;
+}
+
+.headerBtn {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.4rem !important;
+  color: #ffffff !important;
+  background-color: transparent !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.6) !important;
+  border-radius: 8px !important;
+  padding: 0.45rem 1.1rem !important;
+  font-size: 0.85rem !important;
+  font-family: $FONT !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  letter-spacing: 0.3px !important;
+  white-space: nowrap;
+  transition: all 0.2s ease !important;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    border-color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18) !important;
+  }
+}
+
+.controlsRow {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 1.5rem !important;
+  padding: 1rem !important;
+  background: white !important;
+}
+
+.editBox {
+  color: $TEXT_DARK !important;
+  background-color: $BG !important;
+  border: 1px solid $Blue_DARK !important;
+  border-radius: 6px !important;
+  padding: 0.35rem 0.9rem !important;
+  font-size: 0.9rem !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+
+  font-weight: 600 !important;
+  text-transform: none !important;
+  gap: 0.3rem !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 2px 8px rgba(164, 157, 157, 0.5);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08) !important;
+    border-color: $Blue_DARK !important;
+    background-color: $Blue_PALE !important;
+  }
+
+  svg {
+    font-size: 1.6rem !important;
+    color: $Blue_DARK;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+  }
+
+  &:disabled {
+    background-color: #ccc !important;
+    color: #666 !important;
+    cursor: not-allowed;
+  }
+}
+
+.noMeeting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  background-color: #efefef;
+  border-radius: 24px;
+  border: 1px solid grey;
+  width: 100%;
+}
+
+.filterBox {
+  color: $TEXT_DARK !important;
+  background-color: $BG !important;
+  border: 1px solid $Blue_DARK !important;
+  border-radius: 6px !important;
+  padding: 0.2rem !important;
+  text-transform: none !important;
+  gap: 0.3rem !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 2px 8px rgba(164, 157, 157, 0.5);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08) !important;
+    border-color: $Blue_DARK !important;
+    background-color: $Blue_PALE !important;
+  }
+
+  svg {
+    font-size: 1.6rem !important;
+    color: $Blue_DARK;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+  }
+}
+
+.cardsArea {
+  padding: 1rem;
+}
+
+.gridContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.meetingCard {
+  width: 100%;
+  border-radius: 0.875rem;
+  border: 0.9px solid $Blue_DARK;
+  box-shadow: 0 2px 8px rgba(164, 157, 157, 0.3);
+  background: #fffcfc;
+}
+
+.timeContainer {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+.arrow {
+  margin: 0 0.5rem;
+}
+
+.emptyText {
+  text-align: center;
+  margin-top: 2rem;
+  color: $TEXT_MUTED;
+}
+
+@media (max-width: 768px) {
+  .pageHeader {
+    flex-direction: column;
+  }
+
+  .controlsRow {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.welcomeBanner {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  color: $BORDER;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.statusRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.editButton,
+.deleteButton {
+  color: $Blue_DARK !important;
+  box-shadow: 0 2px 8px rgba(164, 157, 157, 0.5);
+}
+
+.cardFirstPartHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weekAndStatus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem !important;
+}
+
+.weekChip {
+  font-weight: 700 !important;
+  background-color: $Blue_PALE !important;
+  color: $Blue_DARK !important;
+  border: 1px solid $Blue_BORDER !important;
+  border-radius: 6px !important;
+  font-size: 1.1rem !important;
+  box-shadow: 0 2px 8px rgba(164, 157, 157, 0.5);
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+.sectionLabel {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: $TEXT_MUTED;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  margin-bottom: 0.65rem;
+  display: block;
+  margin-top: 0 !important;
+}
+
+.arrowSeparator {
+  display: inline-block;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 2rem;
+  color: $Blue_DARK;
+  font-weight: 400;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+
+  transition: transform 0.3s ease;
+  transform: scaleX(2);
+}
+
+.attendeeChip {
+  border-radius: 6px !important;
+  background-color: $Blue_DARK !important;
+  border: 1px solid $Blue_DARK !important;
+  color: white !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 2px 8px rgba(164, 157, 157, 0.5);
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+.inviteeChip {
+  border-radius: 6px !important;
+  background-color: green !important;
+  border: 1px solid green !important;
+  color: white !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 2px 8px rgba(164, 157, 157, 0.5);
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+.noInviteeChip {
+  border-radius: 6px !important;
+  background-color: white !important;
+  border: 1px solid green !important;
+  color: green !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 2px 8px rgba(164, 157, 157, 0.5);
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+.chipContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-top: 12px;
+  padding: 4px 0;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.persona {
+  :global(.ms-Persona-primaryText) {
+    color: #fff !important;
+    font-weight: 700 !important;
+    font-size: 1.6rem !important;
+  }
+  :global(.ms-Persona-secondaryText) {
+    color: hsl(0deg 0% 100% / 63%) !important;
+    margin-top: -2px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .boxValue {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .pageHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .headingWithCreateBtn {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .boxValue {
+    font-size: 1.3rem !important;
+  }
+
+  .startDateBox {
+    width: 100%;
+  }
+
+  .headerBtn {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .allBoxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .boxTitle {
+    font-size: 0.75rem !important;
+  }
+
+  .boxValue {
+    font-size: 1.1rem !important;
+  }
+  mi .headerBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.dialog {
+  :global(.MuiDialog-paperFullScreen) {
+    background-color: $BG_SOFT;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    width: 80%;
+    height: fit-content;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 0.0625rem solid $Blue_DARK;
+    border-radius: 7px !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+
+    &::-webkit-scrollbar {
+      display: none !important;
+    }
+  }
+}
+
+@media (min-width: 64rem) {
+  .dialog:not(:global(.MuiDialog-fullScreen)) {
+    :global(.MuiDialog-paper) {
+      max-height: 85vh;
+      border: 0.0625rem solid $Blue_DARK;
+      border-radius: 7px;
+      box-shadow: 0 1.25rem 1.5625rem -0.3125rem rgba(0, 0, 0, 0.1),
+        0 0.625rem 0.625rem -0.3125rem rgba(0, 0, 0, 0.04);
+    }
+  }
+}
+
+:global {
+  .ant-picker-dropdown {
+    z-index: 10001 !important;
+  }
+
+  .MuiPaper-root.MuiMenu-paper {
+    max-width: 15.625rem !important;
+    border: 0.1rem solid #ccc !important;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .error-range-picker {
+    border: 0.0625rem solid red !important;
+
+    &:hover,
+    &.ant-picker-focused {
+      border: 0.0625rem solid red !important;
+    }
+  }
+}
+
+.createMeetingContainer {
+  width: 100%;
+  max-width: 50rem;
+  padding: 2.5rem;
+  background-color: $BG;
+  border-radius: 1rem;
+  box-shadow: 0 0.625rem 1.5625rem rgba(0, 0, 0, 0.05);
+  position: relative;
+  box-sizing: border-box;
+  animation: slideUp 0.4s ease-out;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.closeButton {
+  position: absolute !important;
+  right: 1.5rem;
+  top: 1rem;
+  color: $TEXT_MUTED !important;
+
+  &:hover {
+    color: $TEXT_DARK !important;
+  }
+}
+
+.formFieldWrapper {
+  margin-bottom: 2rem !important;
+}
+
+:global(.ms-PeoplePicker) {
+  :global(.ms-PickerItem-content) {
+    display: flex;
+    align-items: center;
+    padding: 0 0.25rem !important;
+    height: 3.4375rem !important;
+  }
+
+  :global(.ms-PickerItem-text) {
+    margin: 0 0.5rem !important;
+    font-size: 0.875rem !important;
+    line-height: 2.8125rem !important;
+    font-family: $FONT;
+  }
+
+  :global(.ms-PickerItem-removeButton) {
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+    margin: 0.125rem !important;
+    border: none !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% !important;
+
+    :global(.ms-Button-flexContainer) {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &:hover {
+      background-color: #fde1e1 !important;
+      color: #e81123 !important;
+      outline: none !important;
+    }
+  }
+}
+
+.errorPeoplePicker {
+  :global(.ms-BasePicker-text) {
+    border: 0.0625rem solid red !important;
+  }
+}
+
+.peoplePickerWrapper :global(.ms-BasePicker-text) {
+  padding: 0.5rem !important;
+  display: flex;
+  align-items: center;
+  border-radius: 0.375rem;
+}
+
+.title {
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  color: $TEXT_DARK;
+  margin-bottom: 2.5rem !important;
+  border-bottom: 0.0625rem solid $BORDER;
+  padding-bottom: 1rem;
+  font-family: $FONT;
+}
+
+.scheduleLabel {
+  display: block;
+  margin-bottom: 0.85rem;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  font-family: $FONT;
+}
+
+.rangePickerWrapper {
+  position: relative;
+  z-index: 10;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 0.0625rem solid $BORDER;
+}
+
+.button {
+  padding: 0.75rem 2rem !important;
+  border-radius: 0.6rem !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  transition: all 0.2s ease !important;
+  font-family: $FONT !important;
+
+  &.primary {
+    background-color: $Blue_DARK !important;
+    color: #ffffff !important;
+
+    &:hover {
+      background-color: $Blue_HOVER !important;
+      transform: translateY(-0.125rem);
+    }
+  }
+
+  &.secondary {
+    background-color: transparent !important;
+    color: $TEXT_MED !important;
+    border: 0.0625rem solid $BORDER !important;
+
+    &:hover {
+      background-color: $BG_SOFT !important;
+    }
+  }
+}

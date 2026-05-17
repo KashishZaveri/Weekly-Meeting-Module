@@ -1,0 +1,73 @@
+{
+  "name": "weekly-meeting-module",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">=22.14.0 < 23.0.0"
+  },
+  "scripts": {
+    "build": "heft test --clean --production && heft package-solution --production",
+    "start": "heft start --clean",
+    "clean": "heft clean",
+    "eject-webpack": "heft eject-webpack"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@fluentui/react": "^8.106.4",
+    "@fluentui/react-calendar-compat": "^0.3.17",
+    "@fullcalendar/daygrid": "^6.1.20",
+    "@fullcalendar/interaction": "^6.1.20",
+    "@fullcalendar/react": "^6.1.20",
+    "@fullcalendar/timegrid": "^6.1.20",
+    "@microsoft/sp-component-base": "1.22.2",
+    "@microsoft/sp-core-library": "1.22.2",
+    "@microsoft/sp-lodash-subset": "1.22.2",
+    "@microsoft/sp-office-ui-fabric-core": "1.22.2",
+    "@microsoft/sp-property-pane": "1.22.2",
+    "@microsoft/sp-webpart-base": "1.22.2",
+    "@mui/icons-material": "^7.3.7",
+    "@mui/material": "^5.18.0",
+    "@mui/styled-engine": "^7.3.9",
+    "@mui/styled-engine-sc": "^7.3.7",
+    "@mui/system": "^7.3.9",
+    "@mui/utils": "^7.3.9",
+    "@mui/x-date-pickers": "^8.27.0",
+    "@pnp/spfx-controls-react": "^3.23.0",
+    "antd": "^4.24.15",
+    "dayjs": "^1.11.19",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-router-dom": "^6.30.3",
+    "styled-components": "^6.3.9",
+    "tslib": "2.3.1"
+  },
+  "devDependencies": {
+    "@microsoft/eslint-config-spfx": "1.22.2",
+    "@microsoft/eslint-plugin-spfx": "1.22.2",
+    "@microsoft/sp-module-interfaces": "1.22.2",
+    "@microsoft/spfx-heft-plugins": "1.22.2",
+    "@microsoft/spfx-web-build-rig": "1.22.2",
+    "@rushstack/eslint-config": "4.5.2",
+    "@rushstack/heft": "1.1.2",
+    "@types/heft-jest": "1.0.2",
+    "@types/react": "17.0.45",
+    "@types/react-dom": "^17.0.17",
+    "@types/webpack-env": "~1.15.2",
+    "@typescript-eslint/parser": "8.46.2",
+    "autoprefixer": "^10.4.24",
+    "css-loader": "~7.1.2",
+    "daisyui": "^5.5.18",
+    "eslint": "8.57.1",
+    "eslint-plugin-react-hooks": "4.3.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "typescript": "~5.8.0"
+  },
+  "overrides": {
+    "@rushstack/heft": "1.1.2"
+  },
+  "resolutions": {
+    "@types/react": "17.0.45"
+  }
+}

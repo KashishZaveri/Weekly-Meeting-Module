@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.21.1",
+    "sdksVersions": {},
+    "version": "1.22.2",
+    "libraryName": "weekly-meeting-module",
+    "libraryId": "708fb408-84eb-4e5f-ae6e-71ff8183977f",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "WeeklyMeetingModule",
+    "solutionShortDescription": "WeeklyMeetingModule description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

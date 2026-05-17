@@ -1,0 +1,62 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "weekly-meeting-module-client-side-solution",
+    "id": "708fb408-84eb-4e5f-ae6e-71ff8183977f",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.22.2"
+    },
+    "webApiPermissionRequests": [
+      // for peoplepicker, fetching basic info of user like email, displayname, profile picture
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.ReadBasic.All"
+      },
+      // create team meeting link session
+      {
+        "resource": "Microsoft Graph",
+        "scope": "OnlineMeetings.ReadWrite"
+      },
+      // schedule the meeting on calendar of teams and outlook, sending invitation mail 
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Calendars.ReadWrite"
+      },
+      // for access addendance report of meeting
+      {
+        "resource": "Microsoft Graph",
+        "scope": "OnlineMeetings.Read.All"
+      },
+    ],
+    "metadata": {
+      "shortDescription": {
+        "default": "WeeklyMeetingModule description"
+      },
+      "longDescription": {
+        "default": "WeeklyMeetingModule description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "weekly-meeting-module Feature",
+        "description": "The feature that activates elements of the weekly-meeting-module solution.",
+        "id": "4a3ec177-90f9-4b77-8b05-3e2c3b1aacc2",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/weekly-meeting-module.sppkg"
+  }
+}
